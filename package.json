@@ -1,0 +1,89 @@
+{
+  "name": "@gportfolio/gportfolio",
+  "version": "3.4.1",
+  "description": "Create Your Portfolio Online",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --progress",
+    "build": "webpack --mode=production",
+    "lint": "tslint core/**/*.ts src/**/*.ts scripts/**/*.ts webpack.config.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "release": "npm run contributors && standard-version",
+    "template": "ts-node scripts/template.ts",
+    "deploy": "ts-node scripts/deploy.ts",
+    "contributors": "ts-node scripts/contributors.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPortfolio/GPortfolio.git"
+  },
+  "keywords": [
+    "github-portfolio",
+    "gitportfolio",
+    "gportfolio",
+    "portfolio",
+    "github",
+    "git",
+    "projects",
+    "cv",
+    "resume",
+    "open-source"
+  ],
+  "author": "Alexey Khrushch, alexeykhr@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GPortfolio/GPortfolio/issues"
+  },
+  "homepage": "https://github.com/GPortfolio/GPortfolio#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "shelljs": "^0.8.3",
+    "uikit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@types/copy-webpack-plugin": "^5.0.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/html-webpack-plugin": "^3.2.1",
+    "@types/mini-css-extract-plugin": "^0.8.0",
+    "@types/node": "^12.7.12",
+    "@types/shelljs": "^0.8.5",
+    "@types/uikit": "^2.27.7",
+    "@types/webpack": "^4.39.3",
+    "@types/webpack-dev-server": "^3.1.7",
+    "@types/webpack-env": "^1.14.0",
+    "@types/workbox-webpack-plugin": "^4.1.0",
+    "autoprefixer": "^9.6.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "dotenv": "^8.1.0",
+    "ejs-loader": "^0.3.5",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "ts-loader": "^6.2.0",
+    "ts-node": "^8.4.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-pwa-manifest": "^4.0.0",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

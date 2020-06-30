@@ -1,0 +1,19 @@
+<%
+/*
+* Properties:
+*  - Include: avatar, background, defaultBackground
+*/
+%>
+
+<style>
+<% if (typeof avatar !== 'undefined' && avatar) { %>
+.avatar--image {
+    background: url(<%= avatar %>);
+}
+<% } %>
+<% if (background || typeof defaultBackground !== 'undefined') { %>
+.background--image {
+    background: url(<%= background || defaultBackground %>);
+}
+<% } %>
+</style>
